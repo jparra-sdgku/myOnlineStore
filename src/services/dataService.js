@@ -10,28 +10,28 @@ const catalog = [
         "title": "Apple",
         "category": "fruit",
         "price": 8.50,
-        "image": "apple.jpg",
+        "image": "apples.jpeg",
         "_id": "2"
     },
     {
         "title": "Banana",
         "category": "fruit",
         "price": 10.00,
-        "image": "banana.jpg",
+        "image": "banana.jpeg",
         "_id": "3"
     },
     {
         "title": "Strawberries",
         "category": "berry",
         "price": 15.25,
-        "image": "strawberry.jpg",
+        "image": "strawberry.jpeg",
         "_id": "4"
     },
     {
         "title": "Grapes",
         "category": "fruit",
         "price": 11.99,
-        "image": "grapes.jpg",
+        "image": "grapes.jpeg",
         "_id": "5"
     }
 ]; 

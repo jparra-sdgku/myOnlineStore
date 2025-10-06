@@ -9,12 +9,12 @@ function Catalog() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    //Loading data here
+    // Se ejecuta solo una vez cuando el componente se monta en la pantalla.
     let service = new DataService();
     let data = service.getProducts();
     setProducts(data);
     console.log(data);
-  }, []); //empty array [] means this effect runs only once
+  }, []); // El array vacío [] asegura que el efecto se ejecute solo una vez.
 
 
 

@@ -1,0 +1,29 @@
+.quantity-picker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto; /* Pushes the picker to the bottom of the product card. */
+  padding-top: 10px;
+}
+
+.quantity-picker button {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 50%; /* Circular buttons for a modern look. */
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  width: 30px;
+  height: 30px;
+  line-height: 28px; /* Helps to vertically center the '+' and '-' text. */
+  transition: background-color 0.2s ease; /* Smooth transition for hover. */
+}
+
+.quantity-picker button:hover {
+  background-color: #e0e0e0; /* A slightly darker color on hover. */
+}
+
+.quantity-picker .label-qty {
+  margin: 0 15px; /* Horizontal space between the buttons and the number. */
+  font-size: 1.1em;
+}
