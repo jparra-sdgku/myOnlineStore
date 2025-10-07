@@ -1,0 +1,15 @@
+/* Main layout for the application container */
+.App {
+  min-height: 100vh; /* Ensures the app takes at least the full screen height. */
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  /* Makes this area grow to push the footer down. */
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}

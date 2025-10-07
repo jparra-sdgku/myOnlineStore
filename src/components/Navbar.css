@@ -1,0 +1,47 @@
+ .navbar {
+  background-color: #fff; /* Same as .product */
+  color: #333;            /* Dark text like in buttons */
+  padding: 1rem 2rem; /* More vertical and horizontal padding */
+  border-bottom: 1px solid #e0e0e0; /* Subtle border like in .product */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* Soft shadow like .product hover */
+  font-family: 'Segoe UI', sans-serif;
+
+  /* --- Recommendations --- */
+  position: sticky; /* Makes the navbar stick to the top on scroll */
+  top: 0;
+  z-index: 1000; /* Ensures it stays above other content */
+  width: 100%;
+  box-sizing: border-box; /* Ensures padding is included in the width */
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar-nav {
+  display: flex; /* This is the key to make it horizontal */
+  align-items: center;
+  list-style: none; /* Removes the bullet points */
+  margin: 0;
+  padding: 0;
+  gap: 1.5rem; /* Space between menu items */
+}
+
+.nav-link {
+  color: #333; /* Same as the button */
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 400; /* Slightly lighter font weight for a cleaner look */
+  transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out; /* Smooth transition */
+  padding-bottom: 4px; /* Space for the underline effect */
+  border-bottom: 2px solid transparent; /* Placeholder for the hover underline */
+}
+
+.nav-link:hover {
+  color: #007bff; /* A highlight color for interaction */
+  border-bottom-color: #007bff; /* Underline appears on hover */
+}
