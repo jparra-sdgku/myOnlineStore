@@ -9,13 +9,16 @@ function Catalog() {
   
   useEffect(() => {
     //Load all our data
-    let service = new DataService()
-    let data = service.getProducts()
-    setProducts(data)
-    console.log(data)  
+    console.log("Component loaded")
+    loadCatalog()  
   },[]
 ) //The empty array [] menas this effect runs only ONCE
 
+function loadCatalog(){
+    let service = new DataService()
+    let data = service.getProducts()
+    setProducts(data)
+}
 
   return (
     <div className="catalog">
