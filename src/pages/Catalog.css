@@ -17,3 +17,22 @@
   max-width: 1400px;
   margin: 0 auto; /* Centers the product list */
 }
+
+.filters {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  gap: 15px; /* Space between filter buttons */
+}
+
+.filter-button {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.filter-button:hover {
+  background-color: #f5f5f5;
+}     
