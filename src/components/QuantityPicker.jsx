@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 
 
-function QuantityPicker() {
+function QuantityPicker(props) {
 
     const [quantity, setQuantity] = useState(1);
 
@@ -12,14 +12,14 @@ function QuantityPicker() {
         let nextVal = quantity - 1;
         if (nextVal > 0) {
             setQuantity(nextVal);
-            console.log("Decrease clicked!");
+            props.onChange(nextVal);// notify the parent component
         }
     }
 
     function handleIncrease() {
         let nextVal = quantity + 1;
         setQuantity(nextVal);
-        console.log("Increase clicked!");
+        props.onChange(nextVal);// notify the parent component
     }
 
 
